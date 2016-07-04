@@ -128,7 +128,6 @@ public class UniqueLengthWindowProcessor extends WindowProcessor implements Find
         nextProcessor.process(streamEventChunk);
     }
 
-
     /**
      * This will be called only once and this can be used to acquire
      * required resources for the processing element.
