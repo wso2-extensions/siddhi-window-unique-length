@@ -188,6 +188,7 @@ public class UniqueLengthWindowProcessor extends WindowProcessor implements Find
     public synchronized StreamEvent find(ComplexEvent matchingEvent, Finder finder) {
         return finder.find(matchingEvent, expiredEventChunk, streamEventCloner);
     }
+
     /**
      * To construct a finder having the capability of finding events at the processor that corresponds to the incoming
      * matchingEvent and the given matching expression logic.
@@ -203,7 +204,6 @@ public class UniqueLengthWindowProcessor extends WindowProcessor implements Find
      * @return finder having the capability of finding events at the processor against the expression and incoming
      * matchingEvent
      */
-
     @Override
     public Finder constructFinder(Expression expression, MetaComplexEvent matchingMetaComplexEvent,
                                   ExecutionPlanContext executionPlanContext, List<VariableExpressionExecutor> variableExpressionExecutors,
