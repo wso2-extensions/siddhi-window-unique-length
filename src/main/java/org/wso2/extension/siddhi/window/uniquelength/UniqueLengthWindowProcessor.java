@@ -225,6 +225,5 @@ public class UniqueLengthWindowProcessor extends WindowProcessor implements Find
         }
         return stringBuilder.toString();
     }
-
 }
 
