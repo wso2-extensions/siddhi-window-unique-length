@@ -69,7 +69,7 @@
                         <Bundle-Name>org.wso2.extension.siddhi.window.uniquelength</Bundle-Name>
                         <Export-Package>
                             org.wso2.extension.siddhi.window.uniquelength,
-                            org.wso2.extension.siddhi.window.uniquelength.*
+                            org.wso2.extension.siddhi.window.uniquelength.*; version="${project.version}",
                         </Export-Package>
                         <Import-Package>
                             *;resolution:=optional

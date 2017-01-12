@@ -28,7 +28,10 @@ import org.wso2.siddhi.core.event.Event;
 import org.wso2.siddhi.core.query.output.callback.QueryCallback;
 import org.wso2.siddhi.core.stream.input.InputHandler;
 import org.wso2.siddhi.core.util.EventPrinter;
-
+/**
+ * This class represents the test cases to check the unique length window extension in different scenarios.
+ * @since 1.0.1
+ */
 public class UniqueLengthWindowTestCase {
     private static final Logger log = Logger.getLogger(UniqueLengthWindowTestCase.class);
     private int count;
@@ -184,5 +187,4 @@ public class UniqueLengthWindowTestCase {
         Assert.assertEquals("Event max value", 0, value);
         executionPlanRuntime.shutdown();
     }
-
 }
