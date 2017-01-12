@@ -34,12 +34,11 @@ import org.wso2.siddhi.core.util.collection.operator.Finder;
 import org.wso2.siddhi.core.util.parser.CollectionOperatorParser;
 import org.wso2.siddhi.query.api.exception.ExecutionPlanValidationException;
 import org.wso2.siddhi.query.api.expression.Expression;
-
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-/*
+/**
 * Sample Query:
 * from inputStream#window.unique:length(attribute1,3)
 * select attribute1, attribute2
@@ -48,6 +47,7 @@ import java.util.concurrent.ConcurrentHashMap;
 * Description:
 * In the example query given, 3 is the length of the window and attribute1 is the unique attribute.
 * According to the given attribute it will give unique events within given length.
+ * @since 1.0.1
 * */
 public class UniqueLengthWindowProcessor extends WindowProcessor implements FindableProcessor {
     private ConcurrentHashMap<String, StreamEvent> map = new ConcurrentHashMap<String, StreamEvent>();
